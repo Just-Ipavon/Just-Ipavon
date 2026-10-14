@@ -34,6 +34,9 @@ I love solving complex problems with code and I'm currently expanding my skills 
 <img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Just-Ipavon&repo=shardpix&theme=tokyonight&hide_border=true&bg_color=0f0c29" />
 </a>
 
+<a href="https://github.com/Just-Ipavon/sphragis">
+<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Just-Ipavon&repo=sphragis&theme=tokyonight&hide_border=true&bg_color=0f0c29" />
+</a>
 
 </div>
 
