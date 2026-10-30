@@ -7,8 +7,8 @@
 Hi! 👋 I'm a Computer Science student with a strong passion for development.
 I love solving complex problems with code and I'm currently expanding my skills in software engineering and cybersecurity.
 
-- 🔭 Currently working on **web-recon**
-- 🌱 Learning **offensive security & cloud infrastructure**
+- 🔭 Currently working on **shardpix** & **Sphragis**
+- 🌱 Learning **defensive security**
 - 💬 Ask me about **C/C++, Python, Linux**
 - 📫 Reach me at **ipavon@ipavon.com**
 
