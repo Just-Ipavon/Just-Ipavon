@@ -27,15 +27,15 @@ I love solving complex problems with code and I'm currently expanding my skills 
 <div align="center">
 
 <a href="https://github.com/Just-Ipavon/web-recon">
-<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Just-Ipavon&repo=web-recon&theme=tokyonight&hide_border=true&bg_color=0f0c29" />
+<img width="49%" src="./profile/pin-web-recon.svg" />
 </a>
 
 <a href="https://github.com/Just-Ipavon/shardpix">
-<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Just-Ipavon&repo=shardpix&theme=tokyonight&hide_border=true&bg_color=0f0c29" />
+<img width="49%" src="./profile/pin-shardpix.svg" />
 </a>
 
 <a href="https://github.com/Just-Ipavon/sphragis">
-<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Just-Ipavon&repo=sphragis&theme=tokyonight&hide_border=true&bg_color=0f0c29" />
+<img width="49%" src="./profile/pin-sphragis.svg" />
 </a>
 
 </div>
@@ -101,8 +101,8 @@ I love solving complex problems with code and I'm currently expanding my skills 
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Just-Ipavon&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0f0c29"/>
-<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Just-Ipavon&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0f0c29"/>
+<img height="180em" src="./profile/stats.svg"/>
+<img height="180em" src="./profile/top-langs.svg"/>
 
 <br/>
 
@@ -123,6 +123,6 @@ I love solving complex problems with code and I'm currently expanding my skills 
 
 <br/>
 
-[![](https://visitcount.itsvg.in/api?id=Just-Ipavon&icon=0&color=0)](https://visitcount.itsvg.in)
+![Profile views](https://komarev.com/ghpvc/?username=Just-Ipavon&color=a78bfa&style=flat-square&label=Profile+views)
 
 </div>

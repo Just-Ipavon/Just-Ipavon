@@ -1,0 +1,71 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # ogni giorno alle 03:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/readme-cards.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Se esiste il secret STATS_TOKEN (PAT con scope repo + read:user) conta anche i repo privati,
+      # altrimenti usa GITHUB_TOKEN (solo statistiche pubbliche).
+      TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+      STYLE: theme=tokyonight&hide_border=true&bg_color=0f0c29
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Just-Ipavon&show_icons=true&include_all_commits=true&count_private=true&${{ env.STYLE }}
+          path: profile/stats.svg
+          token: ${{ env.TOKEN }}
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=Just-Ipavon&layout=compact&langs_count=8&${{ env.STYLE }}
+          path: profile/top-langs.svg
+          token: ${{ env.TOKEN }}
+
+      - name: Pin web-recon
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Just-Ipavon&repo=web-recon&${{ env.STYLE }}
+          path: profile/pin-web-recon.svg
+          token: ${{ env.TOKEN }}
+
+      - name: Pin shardpix
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Just-Ipavon&repo=shardpix&${{ env.STYLE }}
+          path: profile/pin-shardpix.svg
+          token: ${{ env.TOKEN }}
+
+      - name: Pin sphragis
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Just-Ipavon&repo=sphragis&${{ env.STYLE }}
+          path: profile/pin-sphragis.svg
+          token: ${{ env.TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
